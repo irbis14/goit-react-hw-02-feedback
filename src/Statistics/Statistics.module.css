@@ -1,0 +1,28 @@
+.list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.list__stats {
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.item {
+  width: 100px;
+  height: 40px;
+  padding: 5px;
+  margin: 5px;
+}
+
+.item__total {
+  margin-bottom: 15px;
+}
+
+.item__total,
+.item__percent {
+  font-weight: 500;
+}

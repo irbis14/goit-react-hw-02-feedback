@@ -1,4 +1,5 @@
 import shortid from "shortid";
+import styles from "./FeedbackOptions.module.css";
 
 const FeedbackOptions = ({ options, onLeaveFeedback }) => {
   return (
@@ -11,6 +12,7 @@ const FeedbackOptions = ({ options, onLeaveFeedback }) => {
             type="button"
             onClick={onLeaveFeedback}
             name={option}
+            className={styles.feedbackButton}
           >
             {option}
           </button>
