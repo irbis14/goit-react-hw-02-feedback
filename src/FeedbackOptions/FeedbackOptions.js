@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import shortid from "shortid";
 import styles from "./FeedbackOptions.module.css";
 
@@ -20,6 +21,10 @@ const FeedbackOptions = ({ options, onLeaveFeedback }) => {
       })}
     </div>
   );
+};
+
+FeedbackOptions.propTypes = {
+  options: PropTypes.objectOf(PropTypes.number),
 };
 
 export default FeedbackOptions;
